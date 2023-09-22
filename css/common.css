@@ -1,0 +1,1456 @@
+@charset "UTF-8";
+/* 全体 */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 16px * 62.5% = 10px 1remの基準を10pxにする*/
+  width: 100%;
+
+}
+
+body {
+  background-color: #fff;
+  color: #333; /* RGB */
+  font-family: "Hiragino Sans", sans-serif;/* 基本のフォントファミリー */
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 1;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.pc-contents {
+  display: block;
+}
+
+.sp-contents {
+  display: none;
+}
+
+
+/* --------------------------------------
+TOPセクション
+-----------------------------------------*/
+.top {
+  background-image: url(../img/top_bg.png);
+  background-size:cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 95rem;
+}
+
+.content {
+  max-width: 1042px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.top-area1 {
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 6%;
+}
+
+.top-area1-logo {
+  margin-bottom: 4rem;
+}
+/* --------------------------------------
+動画セクション
+-----------------------------------------*/
+
+.video {
+  background-image: url(../img/video_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 20% 0 8% 0;
+}
+
+.youtube {
+  width: 100%;
+  max-width: 1042px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+}
+.youtube iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.video-post {
+  background-image: url(../img/Congratulations_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 19.2rem;
+}
+
+
+
+/* --------------------------------------
+メッセージセクション
+-----------------------------------------*/
+
+.Congratulations {
+  background-image: url(../img/message_bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7rem 0 14rem 0;
+}
+
+/* --------------------------------------
+メッセージボックス（共通）
+-----------------------------------------*/
+
+.message-box {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1042px;
+  background-color: #fff;
+  padding: 10rem 0;
+}
+
+.message-box__inner {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  background-image: linear-gradient(180deg, #ccc 1px, transparent 1px); /* 罫線の色と太さ  */
+  background-size: 100% 2.2em; /* 行の高さ */
+  line-height: 2.2em; /* 文字の高さ */
+  padding-bottom: 1px; /* 最終行の下にも罫線を引く */
+  background-position: 0 2.09em; /* 上部の罫線を下にずらす */
+
+}
+
+.message-box__inner p {
+  font-weight: normal;
+}
+
+.font-color__red {
+  color: #C92C2C;
+}
+
+
+/* --------------------------------------
+罠セクション1
+-----------------------------------------*/
+.trap1-post {
+  background-image: url(../img/trap1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 29.2rem;
+}
+
+.trap1 {
+  background-image: url(../img/trap1_bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7rem 0 14rem 0;
+}
+
+/* --------------------------------------
+罠セクション2
+-----------------------------------------*/
+.trap2-post {
+  background-image: url(../img/trap2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 28.6rem;
+}
+
+.trap2 {
+  background-image: url(../img/trap2_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7rem 0 14rem 0;
+}
+
+
+/* --------------------------------------
+罠セクション3
+-----------------------------------------*/
+.trap3-post {
+  background-image: url(../img/trap3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 28rem;
+}
+
+.trap3 {
+  background-image: url(../img/trap3_bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7rem 0 14rem 0;
+}
+
+/* --------------------------------------
+誕生セクション
+-----------------------------------------*/
+.born-post {
+  background-image: url(../img/born.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 33.6rem;
+}
+
+.born {
+  background-image: url(../img/born_bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7rem 0 14rem 0;
+}
+
+/* --------------------------------------
+参加費セクション
+-----------------------------------------*/
+.money-post {
+  background-image: url(../img/money.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 28rem;
+}
+
+.money {
+  background-image: url(../img/money_bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7rem 0 14rem 0;
+}
+
+/* --------------------------------------
+チャンスセクション
+-----------------------------------------*/
+.chance-post {
+  background-image: url(../img/chance.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 28rem;
+}
+
+.chance {
+  background-image: url(../img/chance_bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7rem 0 14rem 0;
+}
+
+/* --------------------------------------
+メッセージセクション
+-----------------------------------------*/
+
+.Congratulations {
+  background-image: url(../img/message_bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7rem 0 14rem 0;
+}
+
+/* --------------------------------------
+メッセージボックス（共通）
+-----------------------------------------*/
+
+.chance-message-box {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1042px;
+  background-color: #fff;
+  padding: 5rem 0 10rem 0;
+}
+
+.chance-message-box__inner {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  background-size: 100% 2.2em; /* 行の高さ */
+  line-height: 2.2em; /* 文字の高さ */
+  padding-bottom: 1px; /* 最終行の下にも罫線を引く */
+  background-position: 0 2.09em; /* 上部の罫線を下にずらす */
+
+}
+
+.chance-message-box__inner p {
+  font-weight: normal;
+}
+
+.banner {
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.btn {
+  text-align: center;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.pulse {
+  animation-name: pulse;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale3d(1, 1, 1);
+  }
+  
+  50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+      transform: scale3d(1, 1, 1);
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.scaling {
+  max-width: 100%;
+  height: auto;
+}
+
+/* フッター */
+div#footer {
+  background-color: #000000;
+  text-align: center;
+  font-size: 88%;
+  font-weight: normal;
+}
+
+#footer a {
+  text-align: center;
+}
+
+div#footer a:hover{
+  text-decoration: none;
+border: none;
+color: gold;
+}
+
+
+
+.wrapper {
+  height: auto;
+  margin: 0px auto;
+  width: var(--wrap-w, 960px);
+}
+
+.footer-accordion {
+  width: 100%;
+  min-width: 270px;
+  padding: 20px 0px 0px 0px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  padding: 5px 0px 0px 0px;
+}
+
+.footer-accordion ul li:first-child {
+  border-top: none;
+}
+
+.footer-accordion ul li {
+  overflow: hidden;
+}
+
+.footer-accordion ul li > a {
+  display: block;
+  position: relative;
+}
+
+.footer-accordion a {
+  color: #FFFFFF;
+  background-image: none;
+  text-decoration: none;
+}
+
+#footer .message {
+  text-align: center;
+}
+
+.message {
+  line-height: 140%;
+  padding-top: 10px;
+  color: #fff;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+
+.copyright {
+  line-height: 140%;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+/*固定フッター*/
+.footer {
+	text-align: center;
+	}
+.footer-top {
+	background-position: center top;
+	background-position: 50% 0%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+	width:100%;
+	height: auto;
+	padding: 20px 0px;
+	background-color: #000;
+	color: #ffffff;
+	z-index: 9999;
+	}
+.footer-wrapper {
+	height: auto;
+	margin: 0px auto;
+	width: 960px;
+}
+.footer-top.static {
+	position:static;
+	}
+
+
+.message{
+	line-height: 140%;
+	padding-top: 10px;
+	color: #fff;	
+}
+.copyright{
+	line-height: 140%;
+	padding-bottom: 20px;
+	color: #fff;
+}
+
+/*フッターアコーディオン
+---------------------------------------------------------------------------*/
+.footer-accordion{
+  width:100%;
+  min-width:270px;
+padding: 20px 0px 0px 0px;
+  margin: 0 auto;
+}
+.footer-accordion a{
+color: #FFFFFF;
+background-image: none;
+text-decoration: none;
+}
+.footer-accordion ul li{
+  overflow: hidden;
+}
+.footer-accordion ul li:first-child{
+  border-top:none;
+}
+.footer-accordion ul li > a{
+  display: block;
+position: relative;
+}
+.footer-accordion ul li > a:hover{
+  color: #2473EC;
+}
+
+.footer-accordion ul li.footer-open > a{
+  color: #FFFFFF;
+}
+.footer-accordion ul li.footer-open > a:hover{
+  color: #2473EC;
+}
+.footer-content{
+  padding: 5px 0px 0px 0px;
+}
+.footer-content p{
+  font-size:  16px;
+  line-height:  28px;
+  padding: 0px 4px 15px 4px; 
+}
+@media screen and (max-width: 320px){
+.footer-accordion ul li > a{
+  font-size:36px;
+}
+}
+
+/*特定商法のテーブル
+---------------------------------------------------------------------------*/
+.tokusyo{
+max-height: 560px;
+overflow-y:scroll;
+}
+table.tokusyo {
+border-collapse: collapse;
+width: 100%;
+margin-bottom: 0px;
+}
+table.tokusyo th,
+table.tokusyo td {
+padding: 5px 10px;
+border: 1px solid #888;
+text-align:left;
+background-color: #fff;
+color: #333;
+line-height: 140%;
+}
+table.tokusyo th {
+background-color: #ccc;
+text-align: left;
+color: #000;
+width: 25%;font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  letter-spacing: normal;
+}
+
+/*テキストボックス
+---------------------------------------------------------------------------*/
+.textbox{
+  padding:0px;
+  max-height:120px;
+  width:100%;
+  overflow-y:scroll;
+}
+.textbox01{
+  padding:10px 20px;
+  max-height:120px;
+  width:100%;
+  overflow-y:scroll;
+border: 1px solid #cccccc;
+font-size: 100%;
+}
+.textbox02{
+  padding:10px 20px;
+  max-height:120px;
+  width:100%;
+  overflow-y:scroll;
+border: 1px solid #cccccc;
+background-color: #FAFAFA;
+font-size: 100%;
+color: #333333;
+}
+
+
+
+
+.mg20{
+margin-top: -20px;
+margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+.mg20{
+margin-top: -10px;
+margin-bottom: 0px;
+font-size: 120%;
+}
+.sp-center{
+text-align: center;
+}
+.sp120{
+font-size: 120%;
+}
+}
+
+
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+font-family: 'FontAwesome', sans-serif;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+}
+.cp_qa dt {
+position: relative;
+margin: 0 0 1.5em 0;
+}
+.cp_qa dd {
+position: relative;
+margin: 0 0 2em 0;
+padding: 0 0 1.5em 2em;
+border-bottom: 1px dotted #0097a7;
+}
+.cp_qa dt::before, .cp_qa dd::before {
+font-size: 1.2em;
+margin: 0 0.5em 0 0;
+color: #ffffff;
+border-radius: 50%;
+display: inline-block;
+width: 1.3em;
+height: 1.3em;
+line-height: 1.2em;
+}
+.cp_qa dt::before {
+padding: 0.1em 0.3em;
+content: '\f128';
+background: #f57c00;
+}
+.cp_qa dd::before {
+padding: 0.12em 0.45em;
+content: '\f12a';
+background: #0097a7;
+}
+.cp_qa dt::after, .cp_qa dd::after {
+position: absolute;
+top: 0.5em;
+display: inline-block;
+width: 0;
+height: 0;
+content: '';
+border-width: 5px 0 5px 5px;
+border-style: solid;
+}
+.cp_qa dt::after {
+left: 1.5em;
+border-color: transparent transparent transparent #f57c00;
+}
+.cp_qa dd::after {
+left: 3.5em;
+border-color: transparent transparent transparent #0097a7;
+}
+
+
+
+.movie-btn {
+  visibility: visible !important;
+  animation-fill-mode: both !important;
+  -webkit-animation-fill-mode: both !important;
+}
+.btn-infinite {
+  -webkit-animation-iteration-count: infinite !important;
+  animation-iteration-count: infinite !important;
+}
+.btn-bounce {
+  -webkit-animation: btn-bounce 2.0s;
+          animation: btn-bounce 2.0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+@keyframes btn-bounce {
+ 0%  {transform: scale(1);opacity: 1;}
+  20% {transform: scale(1.1);}
+  35% {transform: scale(.9);}
+  45% {transform: scale(1.22);}
+  55% {transform: scale(.9);}
+  65% {transform: scale(1.05);opacity: 1;}
+  75% {transform: scale(.95);}
+  85% {transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-webkit-keyframes btn-bounce {
+ 0%  {transform: scale(1);opacity: 1;}
+  20% {transform: scale(1.1);}
+  35% {transform: scale(.9);}
+  45% {transform: scale(1.22);}
+  55% {transform: scale(.9);}
+  65% {transform: scale(1.05);opacity: 1;}
+  75% {transform: scale(.95);}
+  85% {transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+
+.moviebtn
+{
+  position: relative;
+  display: block;
+}
+
+.moviebtn span.cir_1,
+.moviebtn span.cir_2
+{
+  position: absolute;
+  z-index: 1;
+  top: -540px;
+  right: 0px;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+
+  width: 70px;
+  height: 70px;
+  margin: auto;
+
+  -webkit-animation-name: moviebtnAnimation2;
+          animation-name: moviebtnAnimation2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  border-radius: 100%;
+  box-shadow: 0 0 45px 1px #ff004a inset;
+}
+
+.moviebtn span.cir_2
+{
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+@-webkit-keyframes moviebtnAnimation2
+{
+  0%
+  {
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+
+      opacity: 1;
+  }
+
+  50%
+  {
+      opacity: .6;
+  }
+
+  80%
+  {
+      -webkit-transform: scale(2.5, 2.5);
+              transform: scale(2.5, 2.5);
+
+      opacity: 0;
+  }
+
+  100%
+  {
+      -webkit-transform: scale(2.5, 2.5);
+              transform: scale(2.5, 2.5);
+
+      opacity: 0;
+  }
+}
+
+@keyframes moviebtnAnimation2
+{
+  0%
+  {
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+
+      opacity: 1;
+  }
+
+  50%
+  {
+      opacity: .6;
+  }
+
+  80%
+  {
+      -webkit-transform: scale(2.5, 2.5);
+              transform: scale(2.5, 2.5);
+
+      opacity: 0;
+  }
+
+  100%
+  {
+      -webkit-transform: scale(2.5, 2.5);
+              transform: scale(2.5, 2.5);
+
+      opacity: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+.moviebtn span.cir_1,
+.moviebtn span.cir_2
+{
+  position: absolute;
+  z-index: 1;
+  top: -220px;
+  right: 0px;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+
+  width: 70px;
+  height: 70px;
+  margin: auto;
+
+  -webkit-animation-name: moviebtnAnimation2;
+          animation-name: moviebtnAnimation2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  border-radius: 100%;
+  box-shadow: 0 0 45px 1px #ff004a inset;
+}
+}
+
+
+
+
+.line01{
+ background-image: url(../img/line01.png);
+ height: 18px;
+}
+
+
+.tbox02 {
+  position: relative;
+  margin: 2em 0;
+  padding: 1em 1.5em;
+  border: solid 3px #333333;
+background: #f5f4f4;
+font-size: 90%;
+}
+.tbox02 .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -32px;
+  left: -3px;
+  padding: 0.1em 1.5em 0em 1.5em;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 17px;
+  background: #333333;
+  color: #ffffff;
+  border-radius: 5px 5px 0 0;
+}
+.tbox02-2 {
+  position: relative;
+  margin: 2em 0;
+  padding: 1em 1.5em;
+  border: solid 3px #333333;
+background: #FFFDEB;
+font-size: 90%;
+}
+.tbox02-2 .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -32px;
+  left: -3px;
+  padding: 0.1em 1.5em 0em 1.5em;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 17px;
+  background: #333333;
+  color: #ffffff;
+  border-radius: 5px 5px 0 0;
+}
+.tbox07-2-0{
+  border: 1px solid #5fb3f5;
+  border-radius: 5px;
+margin: 10px 0px 10px 0px;
+  padding: 55px 10px 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+.tbox07-2-0:before{
+  background-color: #5fb3f5;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+  content: '【はじめに】長島式株式投資との向き合い方';
+  height: 40px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+.tbox07-2-0:before{
+ padding: 5px 0px;
+}
+}	
+.tbox07-2-0:after {
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #5fb3f5 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+}
+
+.tbox07-2-1{
+  border: 1px solid #5fb3f5;
+  border-radius: 5px;
+margin: 10px 0px 10px 0px;
+  padding: 55px 10px 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+.tbox07-2-1:before{
+  background-color: #5fb3f5;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+  content: '【第１章】ニュースの見方 "株は美人投票！"';
+  height: 40px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+.tbox07-2-1:before{
+ padding: 5px 0px;
+}
+}	
+.tbox07-2-1:after {
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #5fb3f5 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+}
+
+.tbox07-2-2{
+  border: 1px solid #5fb3f5;
+  border-radius: 5px;
+margin: 10px 0px 10px 0px;
+  padding: 55px 10px 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+.tbox07-2-2:before{
+  background-color: #5fb3f5;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+  content: '【第2章】活用するべき情報収集ツール';
+  height: 40px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+.tbox07-2-2:before{
+ padding: 5px 0px;
+}
+}	
+.tbox07-2-2:after {
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #5fb3f5 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+}
+
+.tbox07-2-3{
+  border: 1px solid #5fb3f5;
+  border-radius: 5px;
+margin: 10px 0px 10px 0px;
+  padding: 55px 10px 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+.tbox07-2-3:before{
+  background-color: #5fb3f5;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+  content: '【第3章】株は連想ゲーム';
+  height: 40px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+.tbox07-2-3:before{
+ padding: 5px 0px;
+}
+}	
+.tbox07-2-3:after {
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #5fb3f5 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+}
+
+.tbox07-2-4{
+  border: 1px solid #5fb3f5;
+  border-radius: 5px;
+margin: 10px 0px 10px 0px;
+  padding: 55px 10px 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+.tbox07-2-4:before{
+  background-color: #5fb3f5;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+  content: '【第4章】テーマ株からの銘柄選定';
+  height: 40px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+.tbox07-2-4:before{
+ padding: 5px 0px;
+}
+}	
+.tbox07-2-4:after {
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #5fb3f5 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+}
+
+.tbox07-2-5{
+  border: 1px solid #5fb3f5;
+  border-radius: 5px;
+margin: 10px 0px 10px 0px;
+  padding: 55px 10px 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+.tbox07-2-5:before{
+  background-color: #5fb3f5;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+  content: '【第5章】四季報からの銘柄選定';
+  height: 40px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+.tbox07-2-5:before{
+ padding: 5px 0px;
+}
+}	
+.tbox07-2-5:after {
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #5fb3f5 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+}
+
+.tbox07-2-6{
+  border: 1px solid #5fb3f5;
+  border-radius: 5px;
+margin: 10px 0px 10px 0px;
+  padding: 55px 10px 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+.tbox07-2-6:before{
+  background-color: #5fb3f5;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+  content: '【第6章】新高値ツールで見逃し銘柄をチェック';
+  height: 40px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+.tbox07-2-6:before{
+ padding: 5px 0px;
+}
+}	
+.tbox07-2-6:after {
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #5fb3f5 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+}
+
+.tbox07-2-7{
+  border: 1px solid #5fb3f5;
+  border-radius: 5px;
+margin: 10px 0px 10px 0px;
+  padding: 55px 10px 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+.tbox07-2-7:before{
+  background-color: #5fb3f5;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+  content: '【第7章】いろいろな銘柄選定術';
+  height: 40px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+.tbox07-2-7:before{
+ padding: 5px 0px;
+}
+}	
+.tbox07-2-7:after {
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #5fb3f5 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+}
+
+.tbox07-2-8{
+  border: 1px solid #5fb3f5;
+  border-radius: 5px;
+margin: 10px 0px 10px 0px;
+  padding: 55px 10px 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+.tbox07-2-8:before{
+  background-color: #5fb3f5;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+  content: '【第8章】長島式トレード準備編';
+  height: 40px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+.tbox07-2-8:before{
+ padding: 5px 0px;
+}
+}	
+.tbox07-2-8:after {
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #5fb3f5 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+}
+
+.tbox07-2-9{
+  border: 1px solid #5fb3f5;
+  border-radius: 5px;
+margin: 10px 0px 10px 0px;
+  padding: 55px 10px 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+.tbox07-2-9:before{
+  background-color: #5fb3f5;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+  content: '【第9章】長島式トレード実践';
+  height: 40px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+.tbox07-2-9:before{
+ padding: 5px 0px;
+}
+}	
+.tbox07-2-9:after {
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #5fb3f5 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+}
+
+.tbox07-2-10{
+  border: 1px solid #5fb3f5;
+  border-radius: 5px;
+margin: 10px 0px 10px 0px;
+  padding: 55px 10px 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+.tbox07-2-10:before{
+  background-color: #5fb3f5;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+  content: '【第10章】長島式株式投資まとめ';
+  height: 40px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+.tbox07-2-10:before{
+ padding: 5px 0px;
+}
+}	
+.tbox07-2-10:after {
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #5fb3f5 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+}
+
+.tbox07-2-11{
+  border: 1px solid #5fb3f5;
+  border-radius: 5px;
+margin: 10px 0px 10px 0px;
+  padding: 55px 10px 10px 10px;
+  position: relative;
+  z-index: 0;
+}
+.tbox07-2-11:before{
+  background-color: #5fb3f5;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+  content: '【さいごに】長島和弘からのメッセージ';
+  height: 40px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+.tbox07-2-11:before{
+ padding: 5px 0px;
+}
+}	
+.tbox07-2-11:after {
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #5fb3f5 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+}
+
+
+/* --------------------------------------
+max-width: 1850px
+-----------------------------------------*/
+@media screen and (max-width: 1850px) {
+  .top {
+    height: 90rem;
+}
+}
+
+/* --------------------------------------
+max-width: 1600px
+-----------------------------------------*/
+@media screen and (max-width: 1600px) {
+  .top {
+    height: 80rem;
+}
+}
+
+/* --------------------------------------
+max-width: 1500px
+-----------------------------------------*/
+@media screen and (max-width: 1500px) {
+  .top {
+    height: 75rem;
+}
+}
+
+/* --------------------------------------
+max-width: 1400px
+-----------------------------------------*/
+@media screen and (max-width: 1400px) {
+  .top {
+    height: 62rem;
+}
+}
+
+/* --------------------------------------
+max-width: 1200px
+-----------------------------------------*/
+@media screen and (max-width: 1200px) {
+  .top {
+    height: 58rem;
+}
+}
+
+/* --------------------------------------
+スマホ版max-width: 768px
+-----------------------------------------*/
+@media screen and (max-width: 768px) {
+  .pc-contents {
+    display: none;
+  }
+
+  .sp-contents {
+    display: block;
+  }
+
+  .sp-br {
+    display: block;
+  }
+
+
+  /* 動画セクション */
+  .youtube {
+    width: 90%;
+}
+
+  /* メッセージボックス（共通） */
+  .message-box__inner p {
+  font-size: 1.6rem;
+}
+
+/* フッター */
+div#footer{
+	font-size: 74%;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.tokusyo{
+	max-height: 380px;
+}	
+
+table.tokusyo {
+  border-top: 1px solid #999;
+}
+
+  table.tokusyo td {
+  display: block;
+  text-align: left;
+}
+
+table.tokusyo th {
+  display: block;
+  border-top: none;
+  border-bottom: none;
+  width: 100%;
+	text-align: center;
+}
+
+
+}
+

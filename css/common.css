@@ -123,7 +123,7 @@ TOPセクション
   margin: 0 auto;
   width: 100%;
   max-width: 1042px;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.9);
   padding: 10rem 0;
 }
 
@@ -136,7 +136,6 @@ TOPセクション
   line-height: 2.2em; /* 文字の高さ */
   padding-bottom: 1px; /* 最終行の下にも罫線を引く */
   background-position: 0 2.09em; /* 上部の罫線を下にずらす */
-
 }
 
 .message-box__inner p {
@@ -145,6 +144,7 @@ TOPセクション
 
 .font-color__red {
   color: #C92C2C;
+  font-weight: 600;
 }
 
 
@@ -311,7 +311,7 @@ TOPセクション
 
 .banner {
   width: 100%;
-  margin-top: 3%;
+  margin-top: 7%;
   margin-bottom: 3%;
 }
 
@@ -1417,6 +1417,14 @@ max-width: 1200px
 }
 
   /* メッセージボックス（共通） */
+  .message-box__inner {
+    background-image: linear-gradient(180deg, #ccc 1px, transparent 1px); /* 罫線の色と太さ  */
+    background-size: 100% 1.5em; /* 行の高さ */
+    line-height: 1.5em; /* 文字の高さ */
+    padding-bottom: 1px; /* 最終行の下にも罫線を引く */
+    background-position: 0 2.9em; /* 上部の罫線を下にずらす */
+}
+
   .message-box__inner p {
   font-size: 1.6rem;
 }
@@ -1453,4 +1461,3 @@ table.tokusyo th {
 
 
 }
-
